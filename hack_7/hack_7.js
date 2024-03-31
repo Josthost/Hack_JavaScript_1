@@ -9,6 +9,9 @@
 let arr = ["foo","bar","baz","qux","echo"];
 let result = [];
 
+result = arr.map(function(i){
+    return i.charAt(0).toUpperCase() + i.slice(1);
+});
 
 //export result
 module.exports = result;

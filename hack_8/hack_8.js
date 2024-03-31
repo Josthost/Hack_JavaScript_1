@@ -11,6 +11,19 @@
 let arr = ["foo","bar","baz","qux","echo"];
 let result = [];
 
+for(i = 0; i< arr.length; i++){
+    let item = arr[i]
+
+    if(["bar","baz","qux"].indexOf(item) !== -1){
+        if(i<3){
+            item = item.replace("a","@");
+        }
+        else{
+            item = item.toUpperCase()
+        }
+        result.push(item)
+    }
+}
 
 //export result
 module.exports = result;

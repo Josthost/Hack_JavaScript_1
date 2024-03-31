@@ -7,6 +7,12 @@
  */
 let result = [];
 
+i = [7,5,3,1]
+
+i.map(function (impar){
+    return result.push(impar)
+})
+
 
 //export result
 module.exports = result;
